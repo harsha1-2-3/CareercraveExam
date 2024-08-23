@@ -438,13 +438,16 @@ class Bookingpage extends Component {
   };
 
   getMentors = (s = "30 MIN") => {
-    const { activeInterest, mentorsListState } = this.state;
-    const filteredMentors = mentorsListState.filter(
-      (e) => e.areaOfExpertise === activeInterest || e.availability === s
-    );
-    this.setState({ mentorsListState: filteredMentors });
-    console.log(filteredMentors);
-  };
+  const { activeInterest, isPremiumNeeded } = this.state;
+  const filteredMentors = mentorsList.filter(
+    (mentor) =>
+      (mentor.areaOfExpertise === activeInterest || mentor.availability === s) &&
+      (!isPremiumNeeded || mentor.isPremium)
+  );
+  this.setState({ mentorsListState: filteredMentors });
+    console.log(filteredMentors)
+};
+
 
   onChangeName = (event) => {
     this.setState({ username: event.target.value });
