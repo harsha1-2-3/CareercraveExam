@@ -1,0 +1,240 @@
+/* Booking Seesion */
+
+.bookingBg {
+  min-height: 90vh;
+}
+
+.bookingCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bookingHead {
+  color: red;
+  font-size: 25px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: Bree Serif;
+}
+
+.bookingForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 15px;
+  border: 1px solid lightgrey;
+  padding: 20px;
+}
+
+.inputCont {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.inputLabel {
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0px;
+  margin-bottom: 5px;
+}
+
+.inputBox {
+  border: 1px solid lightgrey;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+.checkboxCont {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  list-style-type: none;
+  padding: 0px;
+}
+
+.durationCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.durationBtn {
+  color: white;
+  background-color: blue;
+  font-weight: bold;
+  height: 30px;
+  width: 80px;
+  border: 0px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.activeDurationBtn {
+  color: blue;
+  background-color: transparent;
+  border: 1px solid blue;
+  box-shadow: 1px 1px 1px 1px lightblue inset;
+}
+
+.durationPrice {
+  margin: 0px;
+  color: blue;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.inputOption {
+  color: blue;
+  border: 1px solid blue;
+  font-weight: bolder;
+  padding: 70px;
+}
+
+.check {
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.bookingBtn {
+  color: white;
+  background-color: blue;
+  border-radius: 13px;
+  font-weight: bold;
+  border: 0px;
+  height: 38px;
+  width: 130px;
+  cursor: pointer;
+  outline: none;
+  margin: 0px;
+  align-self: center;
+  margin-top: 15px;
+}
+
+.confirmCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 90vh;
+}
+
+.confirmHead {
+  color: red;
+  margin-bottom: 30px;
+  font-family: Bree Serif;
+  font-size: 25px;
+  align-self: center;
+}
+
+.confirmDetailsUl {
+  list-style-type: none;
+  padding: 15px;
+  border: 1px solid grey;
+  border-radius: 15px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.confirmLi {
+  color: black;
+  font-size: 20px;
+  margin: 0px;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+.confirmLiSpan {
+  color: blue;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Arial;
+  margin-left: 5px;
+}
+.link {
+  text-decoration: none;
+  color: white;
+}
+.confirmBtn {
+  color: white;
+  background-color: blue;
+  border-radius: 13px;
+  border: 0px;
+  height: 38px;
+  width: 130px;
+  cursor: pointer;
+  outline: none;
+  margin: 10px;
+  align-self: center;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .bookingBg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bookingHead {
+    font-size: 40px;
+  }
+
+  .inputLabel {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .inputCont {
+    margin-bottom: 15px;
+  }
+
+  .check {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+  }
+
+  .confirmHead {
+    font-size: 40px;
+  }
+
+  .confirmDetailsUl {
+    width: 50%;
+    padding: 40px;
+  }
+
+  .confirmLi {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .confirmLiSpan {
+    font-size: 30px;
+    margin-left: 15px;
+  }
+
+  .confirmBtn {
+    margin-top: 30px;
+    height: 40px;
+    width: 130px;
+    font-size: 15px;
+  }
+}

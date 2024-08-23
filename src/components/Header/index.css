@@ -1,0 +1,49 @@
+/* Header */
+.bgHeader {
+  min-height: 10vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgrey;
+}
+
+.headerLogo {
+  height: 45px;
+  width: 45px;
+  margin: 0px;
+}
+
+.linksCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headerHead {
+  color: blue;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.linked {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .bgHeader {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .headerLogo {
+    height: 65px;
+    width: 65px;
+  }
+
+  .headerHead {
+    font-size: 20px;
+  }
+}

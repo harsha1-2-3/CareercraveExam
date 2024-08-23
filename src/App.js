@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import { Component } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./components/Home";
+import BookingPage from "./components/Bookingpage";
+import BookingsList from "./components/BookingsList";
+import BookingsContext from "./context/BookingsContext";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {
+    bookingsList: [],
+  };
+
+  onAddBooking = (bookingObj) => {
+    this.setState((prevState) => ({
+      bookingsList: [...prevState.bookingsList, bookingObj],
+    }));
+  };
+  render() {
+    const { bookingsList } = this.state;
+
+    return (
+      <BookingsContext.Provider
+        value={{
+          bookingsList,
+          onAddBooking: this.onAddBooking,
+        }}
+      >
+        <BrowserRouter>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/bookings" element={<BookingPage />} />
+            <Route exact path="/bookings-list" element={<BookingsList />} />
+          </Routes>
+        </BrowserRouter>
+      </BookingsContext.Provider>
+    );
+  }
 }
 
 export default App;

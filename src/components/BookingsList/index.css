@@ -1,0 +1,122 @@
+/*  Bookings List */
+.bookingsListBg {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.bookingsHeadCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.bookingsListHead {
+  color: red;
+  margin-bottom: 30px;
+  font-family: Bree Serif;
+  font-size: 25px;
+  align-self: center;
+}
+.bookingsListBtn {
+  color: white;
+  background-color: blue;
+  font-weight: bold;
+  height: 45px;
+  width: 150px;
+  border: 0px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.bookingsUl {
+  list-style-type: none;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bookingLi {
+  background-color: transparent;
+  border: 1px solid grey;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  width: 80%;
+}
+
+.confirmDetailsCont {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.confirmPara {
+  color: black;
+  font-size: 17px;
+  margin: 0px;
+  font-weight: bold;
+}
+
+.confirmParaTime {
+  color: blue;
+  font-size: 20px;
+  margin: 0px;
+  font-weight: bold;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.confirmLiSpan {
+  color: blue;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial;
+  margin-left: 5px;
+}
+.emptyHead {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .bookingsHeadCont {
+    flex-direction: row;
+  }
+  .confirmLiSpan {
+    font-size: 35px;
+  }
+  .emptyHead {
+    font-size: 30px;
+  }
+  .confirmPara {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .confirmParaTime {
+    font-size: 35px;
+  }
+
+  .bookingsListHead {
+    font-size: 40px;
+  }
+
+  .bookingLi {
+    padding: 25px;
+  }
+}
