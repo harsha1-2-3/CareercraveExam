@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
-import BookingPage from "./components/Bookingpage";
+import Bookingpage from "./components/Bookingpage";
 import BookingsList from "./components/BookingsList";
 import BookingsContext from "./context/BookingsContext";
 
@@ -28,7 +28,7 @@ class App extends Component {
         <BrowserRouter>
           <Routes>
             <Route exact path="/" element={<Home />} />
-            <Route exact path="/bookings" element={<BookingPage />} />
+            <Route exact path="/bookings" element={<Bookingpage />} />
             <Route exact path="/bookings-list" element={<BookingsList />} />
           </Routes>
         </BrowserRouter>

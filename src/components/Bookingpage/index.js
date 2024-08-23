@@ -69,6 +69,7 @@ const areasOfInterest = [
     displayText: "Human Resources",
   },
 ];
+
 const mentorsList = [
   {
     mentorId: 1,
@@ -423,7 +424,7 @@ const mentorsList = [
   },
 ];
 
-class BookingPage extends Component {
+class Bookingpage extends Component {
   state = {
     username: "Your Name",
     allBookingsList: [],
@@ -681,4 +682,4 @@ class BookingPage extends Component {
   }
 }
 
-export default BookingPage;
+export default Bookingpage;
